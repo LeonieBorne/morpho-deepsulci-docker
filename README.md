@@ -19,7 +19,7 @@ sudo docker run -v <PATH>:<PATH>: leonieborne/morphologist-deepsulci:latest /bin
 * `<PATH>` is a directory in your computer where your T1 MPRAGE MRI scans are stored.
 * `<SUBJECT>` is the subject name/ID that will be attributed to the MRI scan in the Brainvisa database.
 * `<DATABASE_PATH>` is the directory to the Brainvisa database (already existing or not).
-* `<T1MRI_SCAN>` it the path to the MRI scan. It should be a NII file (.nii or .nii.gz).
+* `<T1MRI_SCAN>` it the path to the MRI scan. It should be a NII file (.nii or .nii.gz). You can use the [dcm2niix](https://github.com/rordenlab/dcm2niix) command to convert a DCM file to NII.
 
 Note that `<DATABASE_PATH>` and `<T1MRI_PATH>` should be in `<PATH>`. For example:
 ```
