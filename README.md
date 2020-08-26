@@ -30,5 +30,5 @@ sudo docker run -v /tmp:/tmp: leonieborne/morphologist-deepsulci:latest /bin/bas
 ## Access sulcal morphometry measurements
 If you are interested in knowing the sulcal width (or opening), the cortical thickness, the length, the depth, etc. of each sulcus, you should search for the following CSV file in the `<DATABASE_PATH>`:
 ```
-blablabla
+<DATABASE_PATH>/subjects/<SUBJECT>/t1mri/default_analysis/folds/3.1/default_session_auto/<SUBJECT>_default_session_auto_sulcal_morphometry.csv
 ```
