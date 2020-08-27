@@ -14,7 +14,7 @@ The sulci nomenclature used is described [here](nomenclature.jpg), and its trans
 1. Install Docker (https://www.docker.com/) 
 2. To apply the pipeline on a T1 MPRAGE MRI scan, run the following command (it should take around 10min):
 ```
-sudo docker run -v <PATH>:<PATH>: leonieborne/morphologist-deepsulci:latest /bin/bash -c ". /home/brainvisa/build/bug_fix/bin/bv_env.sh /home/brainvisa/build/bug_fix && python ./morphologist.py -s <SUBJECT_NAME> -d <DATABASE_PATH> -m <T1MRI_PATH>"
+sudo docker run -v <PATH>:<PATH>: leonieborne/morphologist-deepsulci:26082020 /bin/bash -c ". /home/brainvisa/build/bug_fix/bin/bv_env.sh /home/brainvisa/build/bug_fix && python ./morphologist.py -s <SUBJECT_NAME> -d <DATABASE_PATH> -m <T1MRI_PATH>"
 ```
 * `<PATH>` is a directory in your computer where your T1 MPRAGE MRI scans are stored.
 * `<SUBJECT>` is the subject name/ID that will be attributed to the MRI scan in the Brainvisa database.
@@ -23,7 +23,7 @@ sudo docker run -v <PATH>:<PATH>: leonieborne/morphologist-deepsulci:latest /bin
 
 Note that `<DATABASE_PATH>` and `<T1MRI_PATH>` should be in `<PATH>`. For example:
 ```
-sudo docker run -v /tmp:/tmp: leonieborne/morphologist-deepsulci:latest /bin/bash -c ". /home/brainvisa/build/bug_fix/bin/bv_env.sh /home/brainvisa/build/bug_fix && python ./morphologist.py -s me -d /tmp/brainvisa -m /tmp/LEONIE_BORNE.nii.gz"
+sudo docker run -v /tmp:/tmp: leonieborne/morphologist-deepsulci:26082020 /bin/bash -c ". /home/brainvisa/build/bug_fix/bin/bv_env.sh /home/brainvisa/build/bug_fix && python ./morphologist.py -s me -d /tmp/brainvisa -m /tmp/LEONIE_BORNE.nii.gz"
 ```
 3. You've succeeded, congratulations!
 
