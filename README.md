@@ -12,7 +12,7 @@ The sulci nomenclature used is described [here](nomenclature.jpg), and its trans
 ## Instructions
 
 1. Install Docker (https://www.docker.com/) 
-2. To apply the pipeline on a T1 MPRAGE MRI scan, run the following command (it should take around 20min):
+2. To apply the pipeline on a T1 MPRAGE MRI scan, run the following command (it should take around 10min):
 ```
 sudo docker run -v <PATH>:<PATH>: leonieborne/morphologist-deepsulci:latest /bin/bash -c ". /home/brainvisa/build/bug_fix/bin/bv_env.sh /home/brainvisa/build/bug_fix && python ./morphologist.py -s <SUBJECT_NAME> -d <DATABASE_PATH> -m <T1MRI_PATH>"
 ```
